@@ -1,0 +1,188 @@
+.initial-section {
+  padding: 80px var(--desktop-x-padding) 130px var(--desktop-x-padding);
+  background-color: #f5f5f5;
+}
+.normal-section {
+  padding: 80px var(--desktop-x-padding) 100px var(--desktop-x-padding);
+  background-color: white;
+}
+.content-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.content-section .image-row,
+.content-section .text-row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.content-section .text-row {
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.content-section .image-row .peopleModelImg {
+  height: 15%;
+  border-radius: 8px;
+}
+.content-section .image-row .peopleModelImg,
+.content-section .text-row .text-col,
+.content-section .text-row .text-btn-group,
+.content-section .text-row .note-text {
+  width: 32%;
+}
+.content-section .text-row .text-btn-group {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+.content-group-header h2 {
+  width: 100%;
+  font-size: 36px;
+  overflow: hidden;
+}
+.content-group-header h2:after {
+  background-color: #eaeaea;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  left: 27px;
+  margin-right: -100%;
+}
+.normal-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.content-section
+  .text-row
+  .text-btn-group
+  .secondary-btn-container
+  .secondary-button {
+  cursor: pointer;
+}
+.content-section
+  .text-row
+  .text-btn-group
+  .secondary-btn-container
+  .secondary-button:hover {
+  margin-top: -4px;
+}
+/* Card Grid */
+.card-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.card-grid-container .card {
+  position: relative;
+  background: transparent;
+  border: 2px solid #5bc8af;
+  border-radius: 4px;
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 36px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-content {
+  display: flex;
+  gap: 5px;
+  height: 36px;
+  overflow: hidden;
+  align-items: center;
+}
+.card-grid-container .card .card-content .info-icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+.card-grid-container .card:hover {
+  color: #5bc8af;
+}
+.card-grid-container .card:hover .card-content .info-icon {
+  display: block;
+}
+.card-grid-container .card .tooltip-container-info {
+  display: none;
+}
+.card-grid-container .card:hover .tooltip-container-info {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .initial-section {
+    padding: var(--tab-y-padding) var(--tab-x-padding) 85px var(--tab-x-padding);
+  }
+  .content-section .text-row .note-text {
+    width: 100%;
+  }
+  .content-section .text-row .text-col {
+    margin-top: 20px;
+  }
+  .content-section .text-row .text-btn-group {
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 34px;
+  }
+  .content-section .text-row .text-col,
+  .content-section .text-row .text-btn-group .normal-text-wrapper,
+  .content-section .text-row .text-btn-group .secondary-btn-container {
+    width: 47%;
+  }
+  .card-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-grid-container .card {
+    padding: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .initial-section {
+    padding: var(--mobile-y-padding) var(--mobile-x-padding) 50px
+      var(--mobile-x-padding);
+  }
+  .normal-section {
+    padding: 62px var(--mobile-x-padding) 105px var(--mobile-x-padding);
+  }
+  .content-section {
+    gap: 40px;
+  }
+  .content-section .image-row {
+    display: none;
+  }
+  .text-row {
+    display: flex;
+    margin-top: 0;
+    gap: 30px;
+  }
+  .content-section .text-row .text-btn-group {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .content-section .text-row .text-col,
+  .content-section .text-row .text-btn-group .normal-text-wrapper,
+  .content-section .text-row .text-btn-group {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .content-section .text-row .text-btn-group .secondary-btn-container {
+    width: 100%;
+  }
+  .card-grid-container {
+    grid-template-columns: 1fr;
+  }
+}

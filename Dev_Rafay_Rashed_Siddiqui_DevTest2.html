@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Spiralyze Assignment Web Page" />
+    <title>Get An Intervention</title>
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/heroSection.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/inputField.css" />
+    <link rel="stylesheet" href="./css/tooltip.css" />
+    <link rel="stylesheet" href="./css/contentSection.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/video.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="main-container" class="main-container">
+      <!-- Hero Section -->
+      <section id="hero-section" class="hero-section">
+        <!-- Navbar -->
+        <nav class="navbar-section">
+          <div class="navbar-container">
+            <img src="assets/images/png/logo.png" alt="Logo" class="logo-img" />
+            <div class="nav-link-container">
+              <a id="navlink" class="default" href="">Home</a>
+              <a id="navlink" class="default" href="#about">About</a>
+              <a id="navlink" class="default" href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="contact-container">
+            <p class="nav-divider">|</p>
+            <p class="nav-text">
+              CALL NOW FOR A CONSULT
+              <span class="nav-phone-num">123.456.7890</span>
+            </p>
+          </div>
+          <div class="mobile-nav-container">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <img
+                src="assets/images/icon/hamburger.ico"
+                alt="Hamburger Icon"
+                width="20px"
+                height="12px"
+              />
+            </div>
+            <div class="menu-popup" id="menuPopup">
+              <div class="menu-links">
+                <a href="#" onclick="closeMenu()">HOME</a>
+                <a href="#about" onclick="closeMenu()">ABOUT</a>
+                <a href="#contact" onclick="closeMenu()">CONTACT</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Hero Container -->
+        <div class="hero-container">
+          <!-- Hero Section Content -->
+          <div class="hero-content-grid">
+            <!-- Text Grid Item -->
+            <div class="grid-item text-grid-item">
+              <h1 class="text-outline-light">GET AN</h1>
+              <h1 class="text-filled-light">INTERVENTION</h1>
+              <p class="">
+                Showing greater respect to older adults can be done in several
+                ways : acknowledging and putting to use the talents and skills
+                of older adults; creating intergenerational initiatives; and
+                allowing older adults to stay active and independent for as long
+                as possible.
+              </p>
+            </div>
+            <!-- Form Grid Item -->
+            <div class="grid-item form-grid-item">
+              <div class="hero-form-container">
+                <!-- Form Heading -->
+                <h2 class="form-heading">Contact Us</h2>
+                <!-- Form Inputs -->
+                <div class="hero-form-inputs">
+                  <!-- Created Reusable Components to avoid code bloat-->
+                  <div id="name-input-form-row"></div>
+                  <div id="work-input-form-row"></div>
+                  <div
+                    id="country-select-form-group"
+                    class="select-container"
+                  ></div>
+                </div>
+                <!-- Submit Button -->
+                <div id="primary-btn-container">
+                  <button
+                    id="cta-primary-btn"
+                    class="primary-button"
+                    type="button"
+                  >
+                    <img
+                      class="primary-button-icon"
+                      src="assets/images/svg/submitIcon.svg"
+                    />
+                    <p id="btn-label" class="primary-button-text">Submit</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Wave -->
+        <div id="wave-container">
+          <img
+            src="assets/images/svg/heroGreenWave.svg"
+            alt="Green Shade Wave"
+            class="hero-bottom-wave"
+          />
+          <img
+            src="assets/images/svg/heroWhiteWave.svg"
+            alt="White Wave"
+            class="hero-bottom-wave"
+          />
+        </div>
+      </section>
+      <!-- We Understand Section -->
+      <section id="contentSection" class="content-section initial-section">
+        <!-- Image Row -->
+        <div id="imageRow" class="image-row">
+          <img
+            src="assets/images/png/peopleModel1.png"
+            alt="People Model"
+            class="peopleModelImg"
+          />
+          <img
+            src="assets/images/png/peopleModel2.png"
+            alt="People Model"
+            class="peopleModelImg"
+          />
+          <img
+            src="assets/images/png/peopleModel3.png"
+            alt="People Model"
+            class="peopleModelImg"
+          />
+        </div>
+        <!-- Content Row -->
+        <div id="contentGroup" class="content-group">
+          <div id="contentGroupHeader" class="content-group-header">
+            <h2 class="text-outline-dark">
+              We
+              <span class="text-filled-dark">Understand</span>
+            </h2>
+          </div>
+          <div id="contentGroupTextRow" class="text-row">
+            <div class="text-col">
+              <p class="normal-text">
+                Older adults want to play active and meaningful roles in their
+                lives, including as part of a social network, a neighborhood,
+                and a community. Service providers and policymakers must
+                consider that a lack of sense of purpose can become problematic
+                as people age. Engaging them in leisure activities and volunteer
+                work is important.
+              </p>
+            </div>
+            <div class="text-col">
+              <p class="normal-text">
+                Older adults want to stay active and contribute to society in a
+                reciprocal manner (meaning that they want to exchange their
+                services and skills with others for the mutual benefit of the
+                neighborhood or community). Qualitative and quantitative studies
+                published from 2005 to 2016 examining the social needs of older
+                adults were eligible for inclusion.
+              </p>
+            </div>
+            <div class="text-btn-group">
+              <div class="normal-text-wrapper">
+                <p class="normal-text">
+                  To stimulate social contacts, neighborhood initiatives can be
+                  developed. Social meeting places, such as pubs and churches
+                  can help to foster the development of close and peripheral
+                  relationships.
+                </p>
+              </div>
+              <div id="secondary-btn-container" class="secondary-btn-container">
+                <button id="secondary-btn" class="secondary-button" onclick="">
+                  <p id="btn-label" class="secondary-button-text">
+                    92% Success Rate
+                  </p>
+                  <img
+                    class="secondary-button-icon"
+                    src="assets/images/svg/arrowStroke.svg"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Carousel Section -->
+      <section id="carouselSection" class="carousel-section">
+        <div class="carousel-container">
+          <!-- Carousel -->
+          <div class="carousel">
+            <!-- Prev Btn -->
+            <div class="btn-col">
+              <button class="prev-btn" onclick="goPrev()">
+                <!-- Default -->
+                <img
+                  src="assets/images/svg/carouselArrow.svg"
+                  style="transform: rotate(180deg)"
+                  class="default"
+                />
+                <img
+                  src="assets/images/svg/carouselArrowHighlight.svg"
+                  class="highlight"
+                />
+              </button>
+            </div>
+            <div class="carousel-items-container">
+              <!-- Reusable Carousel Item -->
+              <div id="carousel-item-001-abbie" class="carousel-item"></div>
+              <div id="carousel-item-002-john" class="carousel-item"></div>
+              <div id="carousel-item-003-amy" class="carousel-item"></div>
+            </div>
+            <!-- Next Btn -->
+            <div class="btn-col">
+              <button class="next-btn" onclick="goNext()">
+                <img
+                  src="assets/images/svg/carouselArrow.svg"
+                  class="default"
+                />
+                <img
+                  src="assets/images/svg/carouselArrowHighlight.svg"
+                  style="transform: rotate(180deg)"
+                  class="highlight"
+                />
+              </button>
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <div class="carousel-controls">
+            <!-- Adds dots Through JS -->
+            <div class="indicators"></div>
+          </div>
+        </div>
+      </section>
+      <!-- We Can Organize Everything Section -->
+      <section id="contentSection" class="content-section normal-section">
+        <!-- Content Row -->
+        <div id="contentGroup" class="content-group">
+          <div id="contentGroupHeader" class="content-group-header">
+            <h2 class="text-outline-dark">
+              We
+              <span class="text-filled-dark">Can Organize Everything </span>
+            </h2>
+          </div>
+          <div id="contentGroupTextRow" class="text-row">
+            <div class="note-text">
+              <p style="font-style: italic">
+                <span style="font-weight: bold">Interventions</span> should
+                focus on older adult’s desire for connectedness, participation
+                and independence.
+              </p>
+            </div>
+            <div class="text-col">
+              <p class="normal-text">
+                Loneliness and social isolation are growing public health
+                concerns in our aging society. Whilst these experiences occur
+                across the life span, 50% of individuals aged over 60 are at
+                risk of social isolation and one-third will experience some
+                degree of loneliness later in life. It is vital to reduce
+                loneliness and social isolation among older adults.
+              </p>
+            </div>
+            <div class="text-col">
+              <p class="normal-text">
+                The methodology framework proposed by Asked and O’Malley and
+                further developed by Levac, et al. was used to guide the scoping
+                review process. A total of 33 reviews met the inclusion
+                criteria, evaluating a range of interventions targeted at older
+                people residing in the community or institutionalised settings.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-grid-container">
+          <div class="card">
+            <div class="card-content">
+              <p>Needs Assessment</p>
+              <img src="assets/images/svg/infoIcon.svg" class="info-icon" />
+            </div>
+            <div class="tooltip-container-info">
+              We’re experienced in our individual crafts and understand how each
+              one of our roles impacts your plan holistically.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <p>Treatment Planning & Placement</p>
+              <img src="assets/images/svg/infoIcon.svg" class="info-icon" />
+            </div>
+            <div class="tooltip-container-info">
+              We’re experienced in our individual crafts and understand how each
+              one of our roles impacts your plan holistically.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <p>Transportation & Logistics</p>
+              <img src="assets/images/svg/infoIcon.svg" class="info-icon" />
+            </div>
+            <div class="tooltip-container-info">
+              We’re experienced in our individual crafts and understand how each
+              one of our roles impacts your plan holistically.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <p>Insurance Advocacy</p>
+              <img src="assets/images/svg/infoIcon.svg" class="info-icon" />
+            </div>
+            <div class="tooltip-container-info">
+              We’re experienced in our individual crafts and understand how each
+              one of our roles impacts your plan holistically.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <p>Employment Advocacy</p>
+              <img src="assets/images/svg/infoIcon.svg" class="info-icon" />
+            </div>
+            <div class="tooltip-container-info">
+              We’re experienced in our individual crafts and understand how each
+              one of our roles impacts your plan holistically.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <p>Aftercare Planning</p>
+              <img src="assets/images/svg/infoIcon.svg" class="info-icon" />
+            </div>
+            <div class="tooltip-container-info">
+              We’re experienced in our individual crafts and understand how each
+              one of our roles impacts your plan holistically.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <!-- Main Footer Container -->
+        <section class="footer-grid">
+          <!-- Text Grid Item -->
+          <div class="footer-text-container footer-grid-item">
+            <div class="inner-container">
+              <!-- Footer Heading -->
+              <h2 class="text-outline-light">
+                WATCH <span class="highlight">THE VIDEO</span>
+              </h2>
+              <!-- Footer Feature List -->
+              <div class="feature-lists-section">
+                <div id="feature-list-1" class="feature-list">
+                  <img
+                    class="checkmark"
+                    src="assets/images/svg/checkmark.svg"
+                  />
+                  <div class="feature-text">
+                    <strong>Needs Assessment</strong>
+                    <p>
+                      The Advocacy Evaluation Toolkit contains the instruments
+                      used to collect data for evaluating the Consumer Voices
+                      for Coverage program.
+                    </p>
+                  </div>
+                </div>
+                <div id="feature-list-2" class="feature-list">
+                  <img
+                    class="checkmark"
+                    src="assets/images/svg/checkmark.svg"
+                  />
+                  <div class="feature-text">
+                    <strong>Insurance Advocacy</strong>
+                    <p>
+                      We are committed to advocating for appropriate coverage
+                      and payment policies.
+                    </p>
+                  </div>
+                </div>
+                <div id="feature-list-3" class="feature-list">
+                  <img
+                    class="checkmark"
+                    src="assets/images/svg/checkmark.svg"
+                  />
+                  <div class="feature-text">
+                    <strong>Treatment Planning &amp; Placement</strong>
+                    <p>
+                      Patients can better understand medical procedures,
+                      discharge instructions, etc.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Video Grid Item -->
+          <div class="footer-video-container footer-grid-item">
+            <!-- Wave Divider -->
+            <div class="wave-divider">
+              <img
+                src="assets/images/svg/videoBorderDesktop.svg"
+                class="wave-divider-desktop"
+              />
+              <img
+                src="assets/images/svg/videoBorderMobile.svg"
+                class="wave-divider-mobile"
+              />
+            </div>
+            <div class="video-wrapper">
+              <img
+                src="assets/images/png/footerBg.png"
+                alt="Video Thumbnail"
+                class="video-thumbnail"
+              />
+              <div class="play-button-outer-circle">
+                <div class="play-button">
+                  <img class="playIcon" src="assets/images/svg/playIcon.svg" />
+                </div>
+              </div>
+            </div>
+            <img src="assets/images/png/logo.png" class="logo-img" />
+          </div>
+        </section>
+        <!-- Copyright Container -->
+        <section class="footer-copyrights">
+          <div class="copyright-statement">
+            <p>@2021 Get an Intervention Inc. All rights reserved.</p>
+          </div>
+          <!-- Copy Right -->
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a
+            ><span style="color: rgb(117, 117, 117)">|</span
+            ><a href="#">Terms of Use</a
+            ><span style="color: rgb(117, 117, 117)">|</span
+            ><a href="#">Site Map</a>
+          </div>
+        </section>
+      </footer>
+    </main>
+    <!-- Link to JavaScript file -->
+    <script src="./js/navbar.js"></script>
+    <script src="./js/button.js"></script>
+    <script src="./js/inputGroup.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/video.js"></script>
+  </body>
+</html>

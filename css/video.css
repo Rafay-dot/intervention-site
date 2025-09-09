@@ -1,0 +1,43 @@
+/* Style for the popup */
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 50%;
+  height: auto;
+  max-height: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-popup-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-popup .video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Close button style */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10000;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get An Intervention</title>
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="./css/thankyou.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/video.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="main-container" class="main-container">
+      <!-- Navbar -->
+      <nav class="navbar-section">
+        <div class="navbar-container">
+          <img src="assets/images/png/logo.png" alt="Logo" class="logo-img" />
+          <div class="nav-link-container">
+            <a id="navlink" class="default" href="">Home</a>
+            <a id="navlink" class="default" href="#about">About</a>
+            <a id="navlink" class="default" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="contact-container">
+          <p class="nav-divider">|</p>
+          <p class="nav-text">
+            CALL NOW FOR A CONSULT
+            <span class="nav-phone-num">123.456.7890</span>
+          </p>
+        </div>
+        <div class="mobile-nav-container">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <img
+              src="assets/images/icon/hamburger.ico"
+              alt="Hamburger Icon"
+              width="20px"
+              height="12px"
+            />
+          </div>
+          <div class="menu-popup" id="menuPopup">
+            <div class="menu-links">
+              <a href="#" onclick="closeMenu()">HOME</a>
+              <a href="#about" onclick="closeMenu()">ABOUT</a>
+              <a href="#contact" onclick="closeMenu()">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="thankyou-section">
+        <div class="thankyou-container-outer">
+          <div class="thankyou-container-inner">
+            <i
+              class="fa-solid fa-envelope"
+              style="color: #305d52; font-size: 50px"
+            ></i>
+
+            <h1>THANK<span class="text-outline-dark">YOU</span></h1>
+            <p>
+              Wow, thank you for reaching out! We're so excited you took the
+              time to connect with us.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <!-- Main Footer Container -->
+        <section class="footer-grid">
+          <!-- Text Grid Item -->
+          <div class="footer-text-container footer-grid-item">
+            <div class="inner-container">
+              <!-- Footer Heading -->
+              <h2 class="text-outline-light">
+                WATCH <span class="highlight">THE VIDEO</span>
+              </h2>
+              <!-- Footer Feature List -->
+              <div class="feature-lists-section">
+                <div id="feature-list-1" class="feature-list">
+                  <img
+                    class="checkmark"
+                    src="assets/images/svg/checkmark.svg"
+                  />
+                  <div class="feature-text">
+                    <strong>Needs Assessment</strong>
+                    <p>
+                      The Advocacy Evaluation Toolkit contains the instruments
+                      used to collect data for evaluating the Consumer Voices
+                      for Coverage program.
+                    </p>
+                  </div>
+                </div>
+                <div id="feature-list-2" class="feature-list">
+                  <img
+                    class="checkmark"
+                    src="assets/images/svg/checkmark.svg"
+                  />
+                  <div class="feature-text">
+                    <strong>Insurance Advocacy</strong>
+                    <p>
+                      We are committed to advocating for appropriate coverage
+                      and payment policies.
+                    </p>
+                  </div>
+                </div>
+                <div id="feature-list-3" class="feature-list">
+                  <img
+                    class="checkmark"
+                    src="assets/images/svg/checkmark.svg"
+                  />
+                  <div class="feature-text">
+                    <strong>Treatment Planning &amp; Placement</strong>
+                    <p>
+                      Patients can better understand medical procedures,
+                      discharge instructions, etc.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Video Grid Item -->
+          <div class="footer-video-container footer-grid-item">
+            <!-- Wave Divider -->
+            <div class="wave-divider">
+              <img
+                src="assets/images/svg/videoBorderDesktop.svg"
+                class="wave-divider-desktop"
+              />
+              <img
+                src="assets/images/svg/videoBorderMobile.svg"
+                class="wave-divider-mobile"
+              />
+            </div>
+            <div class="video-wrapper">
+              <img
+                src="assets/images/png/footerBg.png"
+                alt="Video Thumbnail"
+                class="video-thumbnail"
+              />
+              <div class="play-button-outer-circle">
+                <div class="play-button">
+                  <img class="playIcon" src="assets/images/svg/playIcon.svg" />
+                </div>
+              </div>
+            </div>
+            <img src="assets/images/png/logo.png" class="logo-img" />
+          </div>
+        </section>
+        <!-- Copyright Container -->
+        <section class="footer-copyrights">
+          <div class="copyright-statement">
+            <p>@2021 Get an Intervention Inc. All rights reserved.</p>
+          </div>
+          <!-- Copy Right -->
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a
+            ><span style="color: rgb(117, 117, 117)">|</span
+            ><a href="#">Terms of Use</a
+            ><span style="color: rgb(117, 117, 117)">|</span
+            ><a href="#">Site Map</a>
+          </div>
+        </section>
+      </footer>
+    </main>
+    <!-- Link to JavaScript file -->
+    <script src="./js/navbar.js"></script>
+    <script src="./js/video.js"></script>
+  </body>
+</html>

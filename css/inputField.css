@@ -1,0 +1,163 @@
+/* FORM CONTAINER STYLING */
+.hero-section
+  .hero-content-grid
+  .form-grid-item
+  .hero-form-container
+  .hero-form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 0 28px;
+}
+.hero-section
+  .hero-content-grid
+  .form-grid-item
+  .hero-form-container
+  .hero-form-inputs
+  .form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+}
+/* FORM GROUP STYLING */
+.form-group {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+}
+.form-group .input-container {
+  height: 100%;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: end;
+}
+/* INPUT/SELECT STYLING */
+.form-group .input-container input,
+.form-group select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  transition: 0.2s ease-in-out;
+  border-radius: 2px;
+}
+.select-container select option {
+  background-color: var(--primary-bg-color);
+  color: white;
+  font-size: 12px !important;
+}
+.select-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.select-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background-image: url("../assets/images/svg/selectFieldArrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 8.66px;
+  height: 5px;
+  pointer-events: none;
+}
+.form-group input:focus,
+.form-group select:focus {
+  background-color: transparent;
+}
+/* FIELDSET STYLING */
+.form-group fieldset {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 2px;
+  pointer-events: none;
+  transition: border-color 0.2s ease-in-out;
+}
+.form-group .default-container,
+.form-group .error-container {
+  position: absolute;
+  top: 6px;
+}
+.form-group .interacted-container {
+  top: 0;
+}
+.form-group .default-container,
+.form-group .interacted-container {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.form-group .error-container {
+  border: 1px solid var(--error-color);
+}
+/* LEGEND STYLING */
+.form-group fieldset legend {
+  width: auto;
+  padding: 0 5px;
+  margin-left: 16px;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.form-group fieldset .interactive-label-state {
+  font-size: 12px;
+}
+.form-group fieldset .default-label-state,
+.form-group fieldset .error-label-state {
+  position: absolute;
+  top: 12px;
+  font-size: 16px;
+}
+.form-group fieldset .error-label-state {
+  color: var(--error-color);
+}
+
+@media (max-height: 480px) {
+  .form-group .input-container {
+    height: 30px;
+  }
+  .form-group .input-container input,
+  .form-group select {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+  .form-group .default-container {
+    top: 3px;
+  }
+  .form-group fieldset legend {
+    margin-left: 10px;
+    padding: 0 3px;
+  }
+  .form-group fieldset .interactive-label-state,
+  .form-group fieldset .error-label-state {
+    font-size: 6px;
+  }
+  .form-group fieldset .default-label-state {
+    top: 6px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-section
+    .hero-content-grid
+    .form-grid-item
+    .hero-form-container
+    .hero-form-inputs
+    .form-row {
+    flex-direction: column;
+  }
+}

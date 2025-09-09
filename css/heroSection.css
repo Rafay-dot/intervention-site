@@ -1,0 +1,178 @@
+@import url("base.css");
+
+/* Hero Container Styling */
+.hero-section {
+  /* Bg styling */
+  background-image: url("../assets/images/png/heroSectionBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Layout */
+  height: 650px;
+  overflow: hidden;
+  /* Position */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: var(--desktop-y-padding) var(--desktop-x-padding);
+}
+.hero-section .hero-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.hero-section .hero-content-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  padding-top: 66px;
+  justify-items: center;
+}
+.hero-section .hero-content-grid .grid-item {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+.hero-section .hero-content-grid .text-grid-item {
+  grid-column: span 6;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+.hero-section .hero-content-grid .form-grid-item {
+  grid-column: span 6;
+  justify-content: flex-end;
+  /* align-items: center; */
+}
+.hero-section .hero-content-grid .form-grid-item .hero-form-container {
+  background: linear-gradient(
+    180deg,
+    rgba(42, 125, 108, 1),
+    rgba(62, 105, 96, 0.68)
+  );
+  height: 449px;
+  max-width: 472px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5%;
+}
+.hero-section .hero-content-grid .text-grid-item h1 {
+  font-size: 61px;
+  width: 100%;
+}
+.hero-section .hero-content-grid .text-grid-item p {
+  font-size: 14px;
+  color: white;
+  font-weight: normal;
+  margin-top: 12px;
+  text-align: left;
+}
+.hero-section .hero-content-grid .form-grid-item .form-heading {
+  font-size: 28px;
+  font-size: bold;
+  color: white;
+}
+.hero-section .hero-bottom-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+@media (max-height: 560px) {
+  .hero-section .hero-content-grid {
+    padding: 40px 0px;
+  }
+}
+
+@media (max-height: 530px) {
+  .hero-section .hero-content-grid {
+    padding: 10px 0px 55px 0px;
+  }
+}
+
+@media (max-height: 480px) {
+  .hero-section .hero-content-grid .text-grid-item h1 {
+    font-size: 40px;
+  }
+  .hero-section .hero-content-grid .text-grid-item p {
+    font-size: 10px;
+    margin-top: 6px;
+  }
+  .hero-section .hero-content-grid {
+    padding: 5px 0px 55px 0px;
+  }
+  .hero-section .hero-content-grid .form-grid-item .form-heading {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .hero-section .hero-content-grid .text-grid-item h1 {
+    font-size: 55px;
+  }
+}
+@media (max-width: 1060px) {
+  .hero-section .hero-content-grid .text-grid-item h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 950px) {
+  .hero-section .hero-content-grid .text-grid-item h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    height: initial;
+    padding: var(--tab-y-padding) var(--tab-x-padding);
+  }
+  .hero-section .hero-content-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 38px 0px 185px 0px;
+  }
+  .hero-section .hero-content-grid .grid-item {
+    width: 73%;
+  }
+  .hero-section .hero-content-grid .text-grid-item {
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-section .hero-content-grid .form-grid-item {
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-section .hero-content-grid .text-grid-item p {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .hero-section {
+    padding: var(--mobile-y-padding) var(--mobile-x-padding);
+  }
+  .hero-section .hero-content-grid {
+    padding: 44px 0px 185px 0px;
+  }
+  .hero-section .hero-content-grid .grid-item {
+    width: 100%;
+  }
+  .hero-section .hero-content-grid .text-grid-item h1 {
+    font-size: 36px;
+  }
+  .hero-section .hero-content-grid .form-grid-item .hero-form-container {
+    height: 555px;
+    max-width: initial;
+    width: 100%;
+  }
+}

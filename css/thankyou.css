@@ -1,0 +1,50 @@
+/* Navbar Container Styling */
+@import url("base.css");
+
+/* Overriding navbar styling */
+.navbar-section {
+  padding: var(--desktop-y-padding) var(--desktop-x-padding);
+  background-color: #305d52;
+}
+
+.thankyou-section {
+  width: 100%;
+  padding: 100px var(--desktop-x-padding);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thankyou-container-outer {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #315e5227;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou-container-inner {
+  width: 100%;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou-container-inner h1 {
+  font-weight: bold;
+  font-size: 66px;
+}
+
+@media (max-width: 600px) {
+  .thankyou-container-inner h1 {
+    font-size: 30px;
+  }
+}

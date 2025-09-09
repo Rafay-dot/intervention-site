@@ -1,0 +1,61 @@
+:root {
+  /* Colors */
+  --highlight-color: #5bc8af;
+  --primary-bg-color: #297c6b;
+  --secondary-bg-color: #194d44;
+  --main-text-color: #333;
+  --white-bg-color: #fff;
+  --error-color: #ff7777;
+
+  /* Layout */
+  --max-width: 1440px;
+  --desktop-x-padding: 8.9%;
+  --tab-x-padding: 24px;
+  --mobile-x-padding: 16px;
+  --desktop-y-padding: 20.5px;
+  --tab-y-padding: 20.5px;
+  --mobile-y-padding: 20px;
+}
+
+@font-face {
+  font-family: "MontserratOutline";
+  src: url("../font/Montserrat-Bold.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--white-bg-color);
+  font-family: "Montserrat", sans-serif;
+  color: var(--main-text-color);
+}
+.main-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.main-container -webkit-scrollbar {
+  display: none;
+}
+.text-outline-light {
+  font-family: "MontserratOutline", sans-serif;
+  color: transparent; /* Make the inner area transparent */
+  -webkit-text-stroke: 1px white;
+  paint-order: stroke fill;
+}
+.text-outline-dark {
+  font-family: "MontserratOutline", sans-serif;
+  color: transparent; /* Make the inner area transparent */
+  -webkit-text-stroke: 1px var(--main-text-color);
+  paint-order: stroke fill;
+}
+.text-filled-light {
+  color: white;
+}
+.text-filled-dark {
+  color: var(--main-text-color);
+}

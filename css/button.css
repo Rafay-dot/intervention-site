@@ -1,0 +1,58 @@
+@import url("base.css");
+
+/* Primary Button */
+.primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 60px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--highlight-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.primary-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.primary-button-icon {
+  display: inline-block;
+  width: 21px;
+  height: 18px;
+}
+.primary-button-text {
+  display: inline-block;
+}
+/* Secondary Button */
+.secondary-button {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid var(--highlight-color);
+  border-radius: 4px;
+  width: 100%;
+  padding: 15px;
+  color: var(--highlight-color);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-height: 480px) {
+  .primary-button {
+    gap: 8px;
+    padding: 12px 40px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  .primary-button-icon {
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+  }
+}
