@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/Dev_Rafay_Rashed_Siddiqui_DevTest2.html"
+    }
+  ]
+}
